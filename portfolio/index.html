@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><i class="fa-solid fa-square-k"></i>Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="education.html"><i class="fa-solid fa-user-graduate"></i></a></li>
+                     <li><a href="skill.html"><i class="fa-solid fa-lightbulb"></i></a></li>
+                    <li><a href="project.html"><i class="fa-solid fa-gears"></i></a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <p>Hello, My name is</p><span class="red">Kanchan Kahar</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <br>
+                <div class="social-media">
+                    <a href="https://x.com/KanchanKah90265" target="_blank">
+                        <div class="twitter"><i class="fa-brands fa-x-twitter"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/kanchan_kahar084/" target="_blank">
+                        <div class="instagram"><i class="fa-brands fa-square-instagram"></i></div>
+                    </a>
+                    <a href="linkedin.com/in/kanchan-kahar-096903319" target="_blank">
+                        <div class="linkdn"><i class="fa-brands fa-linkedin"></i></div>
+                    </a>
+                    <a href="https://github.com/kanchankahar23" target="_blank">
+                        <div class="github"><i class="fa-brands fa-github"></i></div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="pd1.png" alt="Developer">
+            </div>
+        </section>
+        <hr>
+          <div class="project-box">
+                <h1><i class="fa-solid fa-gears"></i> Project</h1>
+            </div>
+        <section class="secondSection">
+             <h1>My Projects</h1>
+            <div class="container">
+
+
+                <div class="project-card">
+                    <h2>To do list</h2>
+                    <p>A full-stack task manager app to manage daily tasks with user login.</p>
+                    <a href="https://github.com/kanchankahar23/BASIC-WEB-PROJECT/tree/main/TO%20DO%20LIST"
+                        target="_blank">View Code</a>
+                </div>
+                <div class="project-card">
+                    <h2>Calculator</h2>
+                    <p>basic arithmetic operations and shows my understanding of DOM manipulation.</p>
+                    <a href="https://github.com/kanchankahar23/BASIC-WEB-PROJECT/tree/main/basic-calculator"
+                        target="_blank">View Code</a>
+                </div>
+                <div class="project-card">
+                    <h2>Tic-Tac-Toe game </h2>
+                    <p>A fun two-player game built with HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/kanchankahar23/tic-tac-toe-org" target="_blank">View Code</a>
+
+                </div>
+                <div class="project-list">
+                    <a href="https://github.com/kanchankahar23/BASIC-WEB-PROJECT" target="_blank">See All Project</a>
+                </div>
+
+
+
+        </section>
+        <hr>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <h2>Kanchan Kahar</h2>
+                <p>© 2025 All rights reserved</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="mailto:kaharkanchan884@gmail.com" title="Email">📧Email:kaharkanchan@gmail.com</a></li>
+                    <li> <a href="https://www.linkedin.com/in/kanchan-kahar-096903319" title="LinkedIn" target="_blank">🔗kanchan-kahar</a></li>
+                    <li> <a href="https://github.com" title="GitHub" target="_blank">🐱kanchankahar23</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['frontend devepoler'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+<script src="portfolio.js"></script>
+
+</html>

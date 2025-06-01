@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<style>
+    .contact-container {
+        padding: 30px;
+        border-radius: 12px;
+        margin-top: 50px;
+        margin-left: 450px;
+        box-shadow: 0 0 15px #f12d3d(0 0 0 0.1);
+        width: 90%;
+        max-width: 500px;
+        border-color: #f12d3d;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color:#f12d3d;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    input,textarea,:hover{
+        border-color: #f12d3d;
+    }
+
+    form button {
+        width: 100%;
+        padding: 12px;
+        background-color: #ef4e5c;;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    form button:hover {
+        background-color: #f12d3d;;
+    }
+
+    #responseMsg {
+        margin-top: 10px;
+        color: green;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><i class="fa-solid fa-square-k"></i>Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="education.html"><i class="fa-solid fa-user-graduate"></i></a></li>
+                    <li><a href="skill.html"><i class="fa-solid fa-lightbulb"></i></a></li>
+                    <li><a href="project.html"><i class="fa-solid fa-gears"></i></a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="First Name" required />
+                 <input type="text" id="lastname" placeholder="Last name" required />
+                <input type="email" id="email" placeholder="Email" required />
+               
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p id="responseMsg"></p>
+            </form>
+        </div>
+    </main>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Basic validation (more can be added)
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            if (!name || !email || !message) {
+                document.getElementById("responseMsg").textContent = "Please fill in all fields.";
+                return;
+            }
+
+            document.getElementById("responseMsg").textContent = "Thank you! Your message has been sent.";
+
+            // Clear form
+            document.getElementById("contactForm").reset();
+        });
+
+    </script>
+
+</html>

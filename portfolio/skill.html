@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<style>
+    .skill-box {
+        height: 20px;
+        width: 100px;
+        font-family: sans-serif;
+        color: white;
+        background-color: #212121;
+        margin-left: 170px;
+        margin-top: 50px;
+        font-size: 1.3rem;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    main h1 {
+        margin-left: 120px;
+        font-family: Arial, sans-serif;
+
+        color: #e63946;
+        margin-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    .skill-container {
+        height: 50vh;
+        width: 100%;
+        margin: 10px 0;
+        align-items: center;
+        justify-content: space-evenly;
+        /* Optional: creates nice space */
+    }
+    .skill-container h2{
+        margin-left: 170px;
+        margin-top: 20px;
+    }
+    .picture{
+        height: 140px;
+        width: 550px;
+        margin-left: 180px;
+        /* background-color: aqua; */
+         gap: 120px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+       
+    }
+    img:hover{
+         transform: scale(1.08);
+        transition: transform 0.6s ease;
+    }
+    .version-control{
+        height: 140px;
+        width: 400px;
+        margin-left: 150px;
+        margin-top: 15px;
+           gap: 100px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+    .version-control img{
+        height: 100px;
+        width: 100px;
+    }
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><i class="fa-solid fa-square-k"></i>Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="education.html"><i class="fa-solid fa-user-graduate"></i></a></li>
+                    <li><a href="skill.html"><i class="fa-solid fa-lightbulb"></i></a></li>
+                    <li><a href="project.html"><i class="fa-solid fa-gears"></i></a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="skill-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Skill</h4>
+        </div>
+        <h1>My Technical Skill</h1>
+        <div class="skill-container">
+            <h2>Programming Language</h2>
+            <div class="picture">
+                
+                <img src="html.png" alt="html">
+                <img src="css.png" alt="css">
+                <img src="javascript.png" alt="JavaScript">
+
+            </div>
+               <h2>Version Control</h2>
+            <div class="version-control">
+             
+                <img src="git.png" alt="git">
+                <img src="github.png"alt="github">
+
+            </div>
+        </div>
+    </main>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<style>
+    .education {
+        display: flex;
+        height: 50vh;
+        width: 100%;
+        margin: 10px 0;
+        align-items: center;
+        justify-content: space-around;
+        /* Optional: creates nice space */
+    }
+
+    .edu-box {
+        height: 20px;
+        width: 180px;
+        font-family: sans-serif;
+        color: white;
+        background-color: #212121;
+        margin-left: 170px;
+        margin-top: 50px;
+        font-size: 1.5rem;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .edu-info{
+        height: 30vh;
+        width: 80%;
+        display: flex;
+        
+    }
+    .year24{
+        margin-top: 80px;
+    }
+    .year{
+        margin-top: 50px;
+    }
+    main .head {
+        margin-left: 150px;
+        margin-top: 20px;
+        color:#e63946;
+    }
+
+    .v-line {
+        width: 5px;
+        height: 80%;
+        background-color: #212121;
+        margin: 0 20px;
+    }
+
+    .left-ab-box {
+
+        color: white;
+        height: 500px;
+        width: 500px;
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><i class="fa-solid fa-square-k"></i>Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="education.html"><i class="fa-solid fa-user-graduate"></i></a></li>
+                    <li><a href="skill.html"><i class="fa-solid fa-lightbulb"></i></a></li>
+                    <li><a href="project.html"><i class="fa-solid fa-gears"></i></a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="edu-box">
+            <h4><i class="fa-solid fa-user-graduate"></i>Education</h4>
+        </div>
+        <h1 class="head">My Education</h1>
+        <section class="education">
+
+            <div class="edu-info">
+                <div class="edu-left">
+                    <h2 >2021-2024</h2>
+                    <h2 class="year24">2024-2026</h2>
+                </div>
+                <div class="v-line">
+
+                </div>
+                <div class="edu-right">
+                    <h2>Master of Computer Application</h2>
+                    <h1>Shri Ram Institute of Technology
+                        Jabalpur, India
+                    </h1>
+
+                    <h2 class="year">Bachelor of Computer Science</h2>
+                    <h1 >Govt.M.H.College Of Home Science
+                        Jabalpur,MP
+                    </h1>
+                </div>
+            </div>
+        </section>
+    </main>
